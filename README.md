@@ -44,8 +44,12 @@ now these waves will be needed in alot of places, we might have to for different
 
 ## Circuit Details
 As shown in the figure we have 2 main blocks
-1. a baud rate generator for manipulating the frequency/ pulsating square wave.
-2. a integrator using a 2 stage opamp 
+1. a baud rate generator for manipulating the frequency/ pulsating square wave.</br>
+Firstly, we will use a baud rate generator for getting a square for the required frequency from a fixed clock(XTAL or crystal oscillator). We can see the basic baud rate generator in figure 2, we will be using the standard baud rate values i.e., 2400, 9600, 115200, etc.
+
+2. a integrator using a 2 stage opamp</br>
+ Integrator is made of 3 main components a resistor, a capacitor, and an  op-amp(SKY130nm transistors). we can observe this in Figure 2.   
+The opamp design has 5 PMOS transistors and 3 NMOS transistors.
 </br>
 
 
