@@ -28,29 +28,22 @@
 
 
 ## Abstract
-With the increasing technology, the size of the transistors is
-reducing. The reducing size leads to the tradeoff between
-power, efficiency and switching time. Because of which
-there is requirement to design low power transistor with less
-area and lesser number of gates. The design should use
-lesser power as well. Thus, making it more and more
-efficient.
+ Triangular waves, An audio waveform comprised of an infinite set of odd harmonic sine waves, It is often used in sound synthesis where its tone quality is less harsh/noisy than the square waves because the amplitude of its upper harmonics falls off more rapidly.
+now these waves will be needed in alot of places, we might have to for different frequencies, but we can't use different clock generators all the time, so we can use a baud generator/ square wave generator for different frequencies(tunable) using select lines.
+ 
+
+
 ## Reference Circuit Diagram
 ![image]()
 ## Reference Waveform
 ![image]()
 
 ## Circuit Details
-As shown in the figure we have two cross coupled
-circuits of PMOS logic and NMOS logic.
+As shown in the figure we have 2 main blocks
+1. a baud rate generator for manipulating the frequency/ pulsating square wave.
+2. a integrator using a 2 stage opamp 
 </br>
-On the PMOS logic we are getting the output as XOR
-while in the NMOS block we get the output as XNOR.
-</br>
-The transistors M4 and M3 behave as a pass transistor
-and pass the output of M1, M2 and M5, M6
-respectively.
-</br>
+
 
 
 ## Software Used
@@ -73,7 +66,7 @@ https://www.veripool.org/verilator/
 
 ## Circuit Diagram in eSim
 The following is the schematic in eSim:
-![image]()
+![image](https://github.com/bharath19-gs/Mixed_signal_triangular_wave_generator/blob/main/circuit.png)
 ## Verilog Code
 ![image](https://github.com/bharath19-gs/Mixed_signal_triangular_wave_generator/blob/main/verilog%2Bcode.jpg)
 ## Makerchip
@@ -144,14 +137,14 @@ endmodule
 ![image_2](https://github.com/bharath19-gs/Mixed_signal_triangular_wave_generator/blob/main/waveform_2.jpg)
 
 ## Netlists
-![image](https://user-images.githubusercontent.com/58599984/156440985-0a983124-b5ad-4b60-b83f-7adf0e7c36fb.png)
+![image]()
 
 ## NgSpice Plots
-![image](https://user-images.githubusercontent.com/58599984/156440036-188911e0-9bb2-4d9f-b53d-878f5792d1c6.png)
-![image](https://user-images.githubusercontent.com/58599984/156440082-c3f319ef-3224-4595-85e9-38bae135350f.png)
+![image]()
+![image]()
 
-![image](https://user-images.githubusercontent.com/58599984/156439624-353c14ac-4216-4aa7-8207-64f4c287b2b7.png)
-![image](https://user-images.githubusercontent.com/58599984/156439590-9371c62f-384b-42f8-9403-9704429d752d.png)
+![image]()
+![image]()
 
 ## GAW Plots
 ![image](https://user-images.githubusercontent.com/58599984/156439535-edb78fc7-a6e6-4178-864a-7cea5ea37e23.png)
