@@ -44,10 +44,10 @@ now these waves will be needed in alot of places, we might have to for different
 
 ## Circuit Details
 As shown in the figure we have 2 main blocks
-1. a baud rate generator for manipulating the frequency/ pulsating square wave.</br>
+1. A baud rate generator for manipulating the frequency/ pulsating square wave.</br>
 Firstly, we will use a baud rate generator for getting a square for the required frequency from a fixed clock(XTAL or crystal oscillator). We can see the basic baud rate generator in figure 2, we will be using the standard baud rate values i.e., 2400, 9600, 115200, etc.
 
-2. a integrator using a 2 stage opamp</br>
+2. An integrator using a 2 stage opamp</br>
  Integrator is made of 3 main components a resistor, a capacitor, and an  op-amp(SKY130nm transistors). we can observe this in Figure 2.   
 The opamp design has 5 PMOS transistors and 3 NMOS transistors.
 </br>
@@ -156,7 +156,7 @@ this is the output from the baud generator(set at 3 as observed in the code 9600
 we can see the baud being instantiated in the ngspice window(the digital block)</br>
 ![image](https://github.com/bharath19-gs/Mixed_signal_triangular_wave_generator/blob/main/data.png)
 
-we can observe a trinagular wave being generated, by manipulating the feedback capacitor we get a perfect output</br>
+we can observe a triangular wave being generated, by manipulating the feedback capacitor we get a perfect output</br>
 ![image](https://github.com/bharath19-gs/Mixed_signal_triangular_wave_generator/blob/main/traing_op.png)
 
 ## Steps to run generate NgVeri Model
